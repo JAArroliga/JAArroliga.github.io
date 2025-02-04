@@ -27,3 +27,9 @@ h2 {
 ul {
     text-align: left;
 }
+
+#contract{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
