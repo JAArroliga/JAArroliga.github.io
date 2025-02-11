@@ -1,0 +1,39 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    background-color: #13293d;
+    text-align: center;
+    color: #c4b1ae;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+a {
+    color: #06bcc1;
+    text-decoration: none;;
+}
+
+a:hover {
+    color: #006494;
+    text-decoration: line;
+}
+
+a:visited {
+    color: #006494;
+    text-decoration:underline;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+}
+
+#contract{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
