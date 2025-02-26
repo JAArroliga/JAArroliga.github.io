@@ -1,17 +1,17 @@
 body {
-    background-color: #3b3923;
+    background-color: #2F2D1D;
     text-align: center;
     color: #d17a22;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 a {
-    color: #843b62;
+    color: #b4c292;
     text-decoration: none;;
 }
 
 a:hover {
-    color: #b4c292;
+    color: #820263;
     text-decoration: line;
 }
 
