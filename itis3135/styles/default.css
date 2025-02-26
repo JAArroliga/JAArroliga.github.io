@@ -2,7 +2,8 @@ body {
     background-color: #2F2D1D;
     text-align: center;
     color: #E7AD73;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
 }
 
 h1 {
@@ -39,6 +40,7 @@ ul {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0px;
+    width: 100%;
 }
