@@ -1,8 +1,12 @@
 body {
     background-color: #2F2D1D;
     text-align: center;
-    color: #d17a22;
+    color: #E7AD73;
     font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+h1 {
+    color: #d17a22;
 }
 
 a {
@@ -34,6 +38,3 @@ ul {
     margin-right: 10%;
 }
 
-p {
-    color: #E7AD73;
-}
