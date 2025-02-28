@@ -1,0 +1,28 @@
+h3 {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+h1 {
+    font-family:'Comic Sans MS';
+    margin-left: 37px;
+    margin-right: 84px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 50px;
+    margin-right: 10px;
+    border: solid maroon;
+    padding: 20px;
+    border-width: 30px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0%;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    margin: auto;
+}
