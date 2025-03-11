@@ -1,0 +1,26 @@
+/* Large Screens */
+@media screen and ( max-width: 1400px ) {
+    main {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Laptops */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    main{
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    main {
+        max-width: 514px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
