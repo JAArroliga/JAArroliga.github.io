@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Arroliga (Jolly Axolotl) || ITIS3135 HTML Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        li  {
+            text-align: left;
+        }
+        table, th, td {
+            border: 1px solid #d17a22;
+            text-align: left;
+        }
+        figure {
+            text-align: left;
+        }
+        table tr:nth-child(even) {
+            background-color: #736f4e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Javier Arroliga Jolly Axolotl || ITIS3135</h1>
+        <div data-include="components/itis3135header.html"></div>
+    </header>
+    <main>
+        <h2>HTML Tables</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Javier Arroliga jarrolig@uncc.edu 20</li>
+            <li>Rafael Singh rafael.singh23@gmail.com 19</li>
+            <li>Lucas Fox lucas.fox1987@yahoo.com 6</li>
+            <li>Cassandra Cain cassc@hotmail.com 15</li>
+            <li>Carrie Kelly ckell77@me.com	13</li>
+            <li>Helena Bertanelli bhelena56@gmail.com 18</li>
+            <li>Max Dillon max.dillon@yahoo.com 20</li>
+            <li>Cain Marko cjmarko@gmail.com 14</li>
+            <li>Betsy Braddock bestybraddon07@hotmail.com 16</li>
+        </ol>
+        
+        <h3>Employee Data In Simple Table</h3>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Javier Arrolig</td>
+                <td>jarrolig@uncc.edu</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Rafael Singh</td>
+                <td>rafael.singh23@gmail.com</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Lucas Fox</td>
+                <td>lucas.fox1987@yahoo.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Cassandra Cain</td>
+                <td>cassc@hotmail.com</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Carrie Kelly</td>
+                <td>ckell77@me.com</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Helena Bertanelli</td>
+                <td>bhelena56@gmail.com</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Max Dillon</td>
+                <td>max.dillon@yahoo.com</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Cain Marko</td>
+                <td>cjmarko@gmail.com</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Betsy Braddock</td>
+                <td>bestybraddon07@hotmail.com</td>
+                <td>16</td>
+            </tr>
+        </table>
+        
+        <h3>Employee Data In Complex Table</h3>
+
+        <figure>
+            <table>
+                <tr>
+                    <th id="col1" headers="blank">Job</th>
+                    <th id="col2" headers="blank">Name</th>
+                    <th id="col3" headers="blank">Email</th>
+                    <th id="col4" headers="blank">Years of Service</th>
+                    <th id="col5" headers="blank">Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td headers="col1 c1" rowspan="3">Manager</td>
+                    <td id="col2 c2">Javier Arroliga</td>
+                    <td id="col3 c2">jarrolig@uncc.edu</td>
+                    <td id="col4 c2">20</td>
+                    <th id="col5 c2">$12,000.00</th>
+                </tr>
+                <tr>
+                    <td id="col2 c3">Rafael Singh</td>
+                    <td id="col3 c3">rafael.singh23@gmail.com</td>
+                    <td id="col4 c3">19</td>
+                    <th id="col5 c3">$10,000.00</th>
+                </tr>
+                <tr>
+                    <td id="col2 c4">Lucas Fox</td>
+                    <td id="col3 c4">lucas.fox1987@yahoo.com</td>
+                    <td id="col4 c4">6</td>
+                    <th id="col5 c4">$11,000.00</th>
+                </tr>
+                <tr>
+                    <td headers="col1 c2"rowspan="3">Marketing</td>
+                    <td id="col2 c5">Cassandra Cain</td>
+                    <td id="col3 c5">cassc@hotmail.com</td>
+                    <td id="col4 c5">15</td>
+                    <th id="col5 c5">$9,000.00</th>
+                </tr>
+                <tr>
+                    <td id="col2 c6">Carrie Kelly</td>
+                    <td id="col3 c6">ckell77@me.com</td>
+                    <td id="col4 c6">13</td>
+                    <th id="col5 c6">$5,600.00</th>
+                </tr>
+                <tr>
+                    <td id="col2 c7">Helena Bertanelli</td>
+                    <td id="col3 c7">bhelena56@gmail.com</td>
+                    <td id="col4 c7">18</td>
+                    <th id="col5 c7">$7,800.00</th>
+                </tr>
+                <tr>
+                    <td headers="col1 c3"rowspan="3">Accounting</td>
+                    <td id="col2 c8">Max Dillon</td>
+                    <td id="col3 c8">max.dillon@yahoo.com</td>
+                    <td id="col4 c8">20</td>
+                    <th id="col5 c8">$6,800.00</th>
+                </tr>
+                <tr>
+                    <td id="col2 c9">Cain Marko</td>
+                    <td id="col3 c9">cjmarko@gmail.com</td>
+                    <td id="col4 c9">14</td>
+                    <th id="col5 c9">$9,870.00</th>
+                </tr>
+                <tr>
+                    <td id="col2 c10">Betsy Braddock</td>
+                    <td id="col3 c10">bestybraddon07@hotmail.com</td>
+                    <td id="col4 c10">16</td>
+                    <th id="col5 c10">$6,150.00</th>
+                </tr>
+                <tr>
+                    <td colspan="3">Total Years of Service:</td>
+                    <td>141</td>
+                    <td>$78.220.00</td>
+                </tr>
+            </table>
+        </figure>
+        <figcaption>Annual Report of Company Personnel</figcaption>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+</body>
+</html>
