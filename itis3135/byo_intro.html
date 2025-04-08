@@ -23,21 +23,21 @@
             <h2 >BYO Intro!</h2>
             <h3>Time to Build Your Own Intro Page! Please fill out the form below so we can create your own page!</h3>
             <form id="byo-form">
-                <div>Name: <input value=" " id="name-input" type="text" required/></input></div>
-                <div>Mascot: <input value=" " id="mascot-input" type="text" required/></input></div>
-                <div>Image: <input value=" " id="image-input" type="file" accept="image/png, image/jpg" required/></input></div>
-                <div>Image Caption: <input value=" " id="caption-input" type="text" required/></input></div>
-                <div>Personal Background: <input value=" " id="personal-background-input" type="text" required/></input></div>
-                <div>Professional Background: <input value=" " id="professional-background-input" type="text" required></input></div>
-                <div>Academic Background: <input value=" " id="academic-background-input" type="text" required/></input></div>
-                <div>Background in Web Development: <input value=" " id="web-dev-background-input" type="text" required/></input></div>
-                <div>Primary Computer Platform: <input value=" " id="computer-platform-input" type="text" required/></input></div>
+                <div>Name: <input id="name-input" type="text" required></input></div>
+                <div>Mascot: <input id="mascot-input" type="text" required></input></div>
+                <div>Image: <input id="image-input" type="file" accept="image/png, image/jpg" required></input></div>
+                <div>Image Caption: <input id="caption-input" type="text" required></input></div>
+                <div>Personal Background: <input id="personal-background-input" type="text" required></input></div>
+                <div>Professional Background: <input id="professional-background-input" type="text" required></input></div>
+                <div>Academic Background: <input id="academic-background-input" type="text" required></input></div>
+                <div>Background in Web Development: <input id="web-dev-background-input" type="text" required></input></div>
+                <div>Primary Computer Platform: <input id="computer-platform-input" type="text" required></input></div>
                 <div>Courses Currently Taking: <div id="course-div"></div><button id="add-class-button">+</button><button id="remove-class-button">-</button></div>
-                <div>Funny Thing?: <input value=" " id="funny-thing-input" type="text" required/></input></div>
-                <div>Anything Else?: <input value=" " id="anything-else-input" type="text" required/></input></div>
-                <div><input id="privacy-checkbox" type="checkbox">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</input></div>
+                <div>Funny Thing?: <inputid="funny-thing-input" type="text" required></input></div>
+                <div>Anything Else?: <input id="anything-else-input" type="text" required></input></div>
+                <div><input id="privacy-checkbox" type="checkbox" required>"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</input></div>
                 <button id="submit-button" type="submit" value="submit">Submit</button>
-                <button id="reset-button" type="click" value="reset">Reset</button>
+                <button id="reset-button" type="button">Reset</button>
             </form>
         </div>    
         <div id="result" hidden></div>

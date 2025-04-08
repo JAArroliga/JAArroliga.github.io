@@ -35,6 +35,16 @@ const inputs = [
     anythingElseInput
 ];
 
+function resetForm() {
+    document.getElementById("byo-form").reset();
+
+    result.hidden = true;
+    byodiv.hidden = false;
+
+    const courseInputs = document.querySelectorAll(".course-input");
+    courseInputs.forEach(input => input.remove());
+}
+
 addClassButton.addEventListener("click", () => {
     const newInput = document.createElement("input");
     newInput.type = "text";
@@ -42,6 +52,13 @@ addClassButton.addEventListener("click", () => {
     newInput.required = true;
 
     courseDiv.appendChild(newInput);
+});
+
+removeClassButton.addEventListener("click", () => {
+    const courseInputs = document.querySelectorAll(".course-input");
+    if (courseInputs.length > 0) {
+        courseInputs[courseInputs.length - 1].remove();
+    }
 });
 
 submitButton.addEventListener("click", () => {
@@ -83,8 +100,17 @@ submitButton.addEventListener("click", () => {
             </li>
             <li><b>Funny Thing?: </b> ${funnyThingInput.value}</li>
             <li><b>Anything Else?:</b> ${anythingElseInput.value}</li>
-            <button id="reset-button" type="click" value="reset">Reset</button>
         </ul> 
     `;
+    
+    const newResetButton = document.createElement("button");
+    newResetButton.id = "new-reset-button";
+    newResetButton.innerText = "Reset";
+    newResetButton.type = "button";
+    newResetButton.addEventListener("click", resetForm);
+    result.appendChild(newResetButton);
+
     result.hidden = false;
 });
+
+resetButton.addEventListener("click", resetForm);
