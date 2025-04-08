@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Arroliga (Jolly Axolotl) || ITIS3135 Intro Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        form {
+            text-align: left;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Javier Arroliga Jolly Axolotl || ITIS3135</h1>
+        <div data-include="components/itis3135header.html"></div>
+    </header>
+    <main>
+        <div id="byo-div">    
+            <h2 >BYO Intro!</h2>
+            <h3>Time to Build Your Own Intro Page! Please fill out the form below so we can create your own page!</h3>
+            <form id="byo-form">
+                <div>Name: <input value=" " id="name-input" type="text" required/></input></div>
+                <div>Mascot: <input value=" " id="mascot-input" type="text" required/></input></div>
+                <div>Image: <input value=" " id="image-input" type="file" accept="image/png, image/jpg" required/></input></div>
+                <div>Image Caption: <input value=" " id="caption-input" type="text" required/></input></div>
+                <div>Personal Background: <input value=" " id="personal-background-input" type="text" required/></input></div>
+                <div>Professional Background: <input value=" " id="professional-background-input" type="text" required></input></div>
+                <div>Academic Background: <input value=" " id="academic-background-input" type="text" required/></input></div>
+                <div>Background in Web Development: <input value=" " id="web-dev-background-input" type="text" required/></input></div>
+                <div>Primary Computer Platform: <input value=" " id="computer-platform-input" type="text" required/></input></div>
+                <div>Courses Currently Taking: <div id="course-div"></div><button id="add-class-button">+</button><button id="remove-class-button">-</button></div>
+                <div>Funny Thing?: <input value=" " id="funny-thing-input" type="text" required/></input></div>
+                <div>Anything Else?: <input value=" " id="anything-else-input" type="text" required/></input></div>
+                <div><input id="privacy-checkbox" type="checkbox">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</input></div>
+                <button id="submit-button" type="submit" value="submit">Submit</button>
+                <button id="reset-button" type="click" value="reset">Reset</button>
+            </form>
+        </div>    
+        <div id="result" hidden></div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
