@@ -61,7 +61,7 @@ removeClassButton.addEventListener("click", () => {
     }
 });
 
-submitButton.addEventListener("click", () => {
+submitButton.addEventListener("click", (event) => {
     event.preventDefault();
 
     const filled = inputs.every(input => input.value !== "");
