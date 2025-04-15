@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Arroliga (Jolly Axolotl) || ITIS3135 Slideshow Demo</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        .images {
+            display: none;
+        }
+        
+        .captions{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Javier Arroliga Jolly Axolotl || ITIS3135</h1>
+        <div data-include="components/itis3135header.html"></div>
+    </header>
+    <main>
+        <h2>Slideshow</h2>
+        <div class="carousel">
+            <div class="images">
+                <img src="images/juiceCarton.jpg" width="auto" height="300" alt="Juice Carton of Munite Maid Tropical Punch">
+            </div>
+            <div class="images">
+                <img src="images/actionFigure.jpg" width="auto" height="300" alt="Action Figure of Leon Kennedy">
+            </div>
+            <div class="images">
+                <img src="images/vacuum.jpg" width="auto" height="300" alt="Vacuum Cleaner">
+            </div>
+            <div class="images">
+                <img src="images/insulation.jpg" width="auto" height="300" alt="Insulation in my attic">
+            </div>
+            <div class="images">
+                <img src="images/EVILRat.PNG" width="auto" height="300" alt="Ethernet Cable">
+            </div>
+            <div class="images">
+                <img src="images/router.jpg" width="auto" height="300" alt="Router for internet">
+            </div>
+            <div class="captions">
+                <caption>Juice Carton</caption>
+            </div>
+            <div class="captions">
+                <caption>Action Figure of Leon Kennedy</caption>
+            </div>
+            <div class="captions">
+                <caption>Vacuum</caption>
+            </div>
+            <div class="captions">
+                <caption>Insulation in attic</caption>
+            </div>
+            <div class="captions">
+                <caption>Ethernet Cable</caption>
+            </div>
+            <div class="captions">
+                <caption>Router for Internet</caption>
+            </div>
+            <div>
+                <button id="back-button">&#60;</button>
+                <button id="next-button">&#62;</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/include.js"></script>
+</body>
+</html>
