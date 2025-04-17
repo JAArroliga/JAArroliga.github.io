@@ -72,6 +72,22 @@ table {
     margin: 0% 15% 0% 15%;
 }
 
+#submit-button, #reset-button {
+    background-color: #820263;
+    color: #d17a22;
+}
+
+#name-input, #phone-number-input, #email-input {
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+#name-input:focus, #phone-number-input:focus, #email-input:focus {
+    background-color: #b4c292
+}
+
 /* Large Screens */
 @media screen and ( max-width: 1400px ) {
     main {

@@ -42,7 +42,7 @@ function resetForm() {
     byodiv.hidden = false;
 
     const courseInputs = document.querySelectorAll(".course-input");
-    courseInputs.forEach(input => input.remove());
+    courseInputs.forEach((input) => input.remove());
 }
 
 addClassButton.addEventListener("click", () => {
@@ -64,11 +64,11 @@ removeClassButton.addEventListener("click", () => {
 submitButton.addEventListener("click", (event) => {
     event.preventDefault();
 
-    const filled = inputs.every(input => input.value !== "");
+    const filled = inputs.every((input) => input.value !== "");
     const courseInputs = document.querySelectorAll(".course-input");
     const courses = [];
 
-    courseInputs.forEach(course => {courses.push(course.value)});
+    courseInputs.forEach((course) => {courses.push(course.value);});
 
     if (!filled) {
         alert("Please make sure all fields are filled out");
@@ -95,7 +95,7 @@ submitButton.addEventListener("click", (event) => {
             <li><b>Primary Computer Platform:</b> ${computerPlatformInput.value}</li>
             <li><b>Courses I&#39;m Taking, & Why:</b> 
                 <ul>
-                    ${courses.map(value => `<li>${value}</li>`).join('')}
+                    ${courses.map((value) => `<li>${value}</li>`).join('')}
                 </ul>
             </li>
             <li><b>Funny Thing?: </b> ${funnyThingInput.value}</li>
