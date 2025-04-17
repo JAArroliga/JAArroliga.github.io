@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Arroliga (Jolly Axolotl) || ITIS3135 Forms EC</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Javier Arroliga Jolly Axolotl || ITIS3135</h1>
+        <div data-include="components/itis3135header.html"></div>
+    </header>
+    <main>
+        <div id="survey-div">
+            <h2>The Debate Rages On!</h2>
+            <h3>Fill out the form below to settle these arguments once and for all!</h3>
+            
+            <form id="survey">
+                
+                <div><b>What is the better pet?</b>
+                    <input type="radio" id="dogs" name="fav_pet" value="dogs" required>
+                    <label for="dogs">Dogs</label>
+                    <input type="radio" id="cats" name="fav_pet" value="cats">
+                    <label for="cats">Cats</label>
+                </div>
+
+                <div><b>Is water wet?</b>
+                    <input type="radio" id="wet-yes" name="wetyn" value="wet-yes" required>
+                    <label for="wet-yes">Yes</label>
+                    <input type="radio" id="wet-no" name="wetyn" value="wet-no">
+                    <label for="wet-no">No</label>
+                </div>
+
+                <div><b>Would you rather fight 100 duck sized horses or 1 horse sized duck?</b>
+                    <input type="radio" id="ducks" name="horse-or-duck" value="ducks" required>
+                    <label for="ducks">100 Duck Sized Horses</label>
+                    <input type="radio" id="horses" name="horse-or-duck" value="horses">
+                    <label for="horses">1 Horse Sized Duck</label>
+                </div><br>
+
+                <div><b>How many rats do you think you could take in a fight?</b>
+                    <select name="rats" id="rats" required>
+                        <option value="" disabled selected>Select number of rats</option>
+                    </select>
+                </div><br>
+
+                <div><b>Build A Pizza!</b>
+                    <div>Meats: <br>
+                        <input type="checkbox" id="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                        <input type="checkbox" id="ham" value="ham">
+                        <label for="ham">Ham</label>
+                        <input type="checkbox" id="bacon" value="bacon">
+                        <label for="bacon">Bacon</label>
+                        <input type="checkbox" id="anchovies" value="anchovies">
+                        <label for="anchovies">Anchovies</label>
+                        <input type="checkbox" id="sausage" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                    <div>Veggies: <br>
+                        <input type="checkbox" id="mushrooms" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                        <input type="checkbox" id="jalapenos" value="jalapenos">
+                        <label for="jalapenos">Jalapeños</label>
+                        <input type="checkbox" id="banana-peppers" value="banana-peppers">
+                        <label for="banana-peppers">Banana Peppers</label>
+                        <input type="checkbox" id="olives" value="olives">
+                        <label for="olives">Olives</label>
+                        <input type="checkbox" id="onions" value="onions">
+                        <label for="onions">Onions</label>
+                        <input type="checkbox" id="pineapples" value="pineapples">
+                        <label for="pineapples">Pineapples</label>
+                    </div>
+                </div>
+                
+                <h4>Help us Contact you with the results!</h4>
+                <div>Name: <input id="name-input" type="text" placeholder="Ex: John Doe" required></div>
+                <div>Phone Number: <input id="phone-number-input" placeholder="Ex: (123)-456-7890" required></div>
+                <div>Email Address <input id="email-input" type="email" placeholder="johndoe@gmail.com" required></div>
+
+                <button id="submit-button" type="submit" value="submit">Submit</button>
+                <button id="reset-button" type="button">Reset</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

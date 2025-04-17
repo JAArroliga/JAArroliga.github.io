@@ -1,6 +1,5 @@
 body {
-    background-color: #2F2D1D;
-    text-align: center;
+    background-color: #2F2D1D;;
     color: #E7AD73;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0 auto;
@@ -8,6 +7,15 @@ body {
 
 h1 {
     color: #d17a22;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
 }
 
 a {
@@ -25,12 +33,15 @@ a:visited {
     text-decoration:underline;
 }
 
-h2 {
-    text-align: center;
-}
-
 ul {
     text-align: left;
+}
+
+figure {
+    text-align: center;
+}
+figcaption {
+    text-align: center;
 }
 
 #contract{
@@ -39,10 +50,26 @@ ul {
     margin-right: 10%;
 }
 
+#signature{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
+
+
+form {
+    text-align: left;
+    margin: 0% 15% 0% 15%;
+}
+
+table {
+    margin: 0% 15% 0% 15%;
 }
 
 /* Large Screens */
