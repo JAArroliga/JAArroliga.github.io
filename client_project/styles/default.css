@@ -1,0 +1,43 @@
+:root {
+    --blue: #188fa7;
+    --magnolia: #f7f0f5;
+    --celadon: #86deb7;
+}
+
+body {
+    background-color: var(--blue);
+    margin: 2rem;
+}
+
+main {
+    background-color: var(--magnolia);
+    border-radius: 25px;
+    border: 2px solid black;
+    flex: 2;
+    padding: 1rem;
+}
+
+.header {
+    text-align: center;
+    background-color: var(--celadon);
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: var(--magnolia);
+    padding: 1rem;
+    border-radius: 25px;
+    border: 2px solid black;
+}
