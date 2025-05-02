@@ -9,18 +9,74 @@
     </head>
     <body>
         <h1>Fitness Tracker</h1>
-        <div class="homepage">
+        
+        <h2>Planner</h2>
+        
+        <div class = "header" data-include="components/header.html">test</div>
+        
+        <div class="container">
+            
             <main>
-                <h2>Planner</h2>
-                    <div data-include="components/header.html"></div>
+                
+                <button id="add-new-button">Add New Exercise</button>
+
+                <form class="exercise-form" id="exercise-form" style="display: none">
+                    <label for="exercise-name">Name of Exercise: </label>
+                    <input name="exercise-name" id="exercise-name" required /><br>
+                    
+                    <label for="exercise-duration">Duration: </label>
+                    <input name="exercise-duration" id="exercise-duration" type="number" min="0" step="1" required />
+                    <select name="exercise-duration-type" id="exercise-duration-type">
+                        <option value="mins">Mins</option>
+                        <option value="reps">Reps</option>
+                    </select><br>
+
+                    <label for="exercise-type">Type of Exercise</label>
+                    <select name="exercise-type" id="exercise-type">
+                        <option value="" disabled selected>Type of Exercise</option>
+                        <option value="Strength">Strength</option>
+                        <option value="Endurance">Endurance</option>
+                        <option value="Core">Core</option>
+                        <option value="Cardio">Cardio</option>
+                        <option value="Agility">Agility</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    
+                    <label for="day">What day of the week is it on?</label>
+                    <select name="day" id="select-day">
+                        <option id="default" value="" disabled selected>Day of the Week</option>
+                        <option value="sunday">Sunday</option>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                    </select><br>
+
+                    <input type="text" id="exercise-description" size="30" placeholder="Enter Description of exercise" required/><br>
+
+                    <button id="add-exercise-button">Add Exercise</button>
+                    <button id="cancel-button" type="button">Cancel</button>
+                </form>
+
+                <div class="row">
+                    <div class="column" id="sunday">Sunday</div>
+                    <div class="column" id="monday">Monday</div>
+                    <div class="column" id="tuesday">Tuesday</div>
+                    <div class="column" id="wednesday">Wednesday</div>
+                    <div class="column" id="thursday">Thursday</div>
+                    <div class="column" id="friday">Friday</div>
+                    <div class="column" id="saturday">Saturday</div>
+                </div>
+
             </main>
+
         </div>
-            
-            
         <footer>
             
         </footer>
-
-       <script src="scripts/include.js"></script>
+        <script src="scripts/planner.js"></script>
+        <script src="scripts/include.js"></script>
     </body>
 </html>

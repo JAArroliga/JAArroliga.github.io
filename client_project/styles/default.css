@@ -41,3 +41,49 @@ main {
     border-radius: 25px;
     border: 2px solid black;
 }
+
+.sidebar-item:hover  {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 2px;
+}
+
+a {
+    color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.column {
+    flex: 1 1 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+}
+
+.added-exercise {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .column {
+        flex: 0 0 100%;
+    }
+}

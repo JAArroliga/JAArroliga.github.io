@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Fitness Tracking || Calculator</title>
+        <title>Fitness Tracking || Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -9,18 +9,71 @@
     </head>
     <body>
         <h1>Fitness Tracker</h1>
-        <div class="homepage">
+        
+        <h2>Homepage</h2>
+        
+        <div class = "header" data-include="components/header.html">test</div>
+        
+        <div class="container">
+            
             <main>
-                <h2>Calculator</h2>
-                    <div data-include="components/header.html"></div>
+                What Best Describes You?
+                <form>
+                    <div>
+                        <input type="radio" id="female" name="mf" value="female" required checked/>Female
+                        <input type="radio" id="male" name="mf" value="male" />Male
+                    </div>
+
+                    <div>
+                        <label for="select-age">Age:</label>
+                        <select name="select-age" id="select-age">
+                            <option value="" disabled selected>Age</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="height">Height:</label>
+                        <select name="height" id="height-feet">
+                            <option value="" disabled selected>ft</option>
+                        </select>ft
+                        <select name="height" id="height-inches">
+                            <option value="" disabled selected>in</option>
+                        </select>in
+                    </div>
+
+                    <div>
+                        <label for="weight">Weight: </label>
+                        <input type="number" id="weight" name="weight" min="0" required />
+                    </div>
+
+                    <div>
+                        <label for="lifestyle">I have a very </label>
+                        <select name="lifestyle" id="lifestyle-dropdown">
+                            <option id="default" value="" disabled selected>Select your type of lifestyle</option>
+                            <option id="sedentary" value="1.2">Sedentary (little to no exercise)</option>
+                            <option id="lightly-active" value="1.375">Lightly Active (less than 3 days a week)</option>
+                            <option id="moderately-active" value="1.55">Moderately Active (most days of the week)</option>
+                            <option id="very-active" value="1.725">Very Active (every day)</option>
+                            <option id="extra-active" value="1.9">Extra Active (multiple times a day)</option>
+                        </select> lifestyle.
+                    </div>
+
+                    <button id="calculate-button">Calculate</button>
+                </form>
+
+                <br>
+
+                <div>Results: 
+                    <div id="results"></div>
+                </div>
             </main>
+
         </div>
-            
-            
+
         <footer>
             
         </footer>
-
-       <script src="scripts/include.js"></script>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/calculator.js"></script>
     </body>
 </html>
