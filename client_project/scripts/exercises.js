@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Array.from(items).forEach((item) => {
         item.addEventListener("click", () => {
             const id = item.dataset.id;
-            mainContent.innerHTML = content[id]
+            mainContent.innerHTML = content[id];
         });
     });
 
