@@ -3,14 +3,32 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Code is running");
 
     const content = {
-        1: `<div class="test-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        1: `<div class="content">
+                <strong>Bicep Curl</strong>
+                
+                <figure>
+                    <img src="images/bicep_curl.jpeg" alt="Holding Barbell in the upwards position" style="width: auto" />
+                    <figcaption>Holding Barbell in the upwards position</figcaption>
+                </figure>
+            
+                Hold the barbell with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. 
+                Lift the barbell toward the shoulders while bending the elbows and keeping them next to the middle of the body. 
+                Slowly lower the weight to return to the starting position. Keep chest still, using just the arms for the movement.
             </div>`,
-        2: {content: `<div>test</div>`},
-        3: {}
+        2: `<div>
+                <strong>Chest Press</strong>
+                
+                <figure>
+                    <img src="images/chest_press.jpeg" alt="" style="width: auto" />
+                    <figcaption>Holding Chest Press close to body. </figcaption>
+                </figure>
+
+                Lie face up on a flat bench, and grip a barbell with the hands slightly wider than shoulder-width.
+                Press the feet into the ground and the hips into the bench while lifting the bar off the rack. 
+                Slowly lower the bar to the chest by allowing the elbows to bend out to the side. 
+                Stop when the elbows are just below the bench, and press feet into the floor to press the weight straight up to return to the starting position.
+            </div>`,
+        3: `test`
     };
     
     const mainContent= document.getElementById("main-content");
@@ -19,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Array.from(items).forEach((item) => {
         item.addEventListener("click", () => {
             const id = item.dataset.id;
-            mainContent.innerHTML = content[id].content;
+            mainContent.innerHTML = content[id]
         });
     });
 
