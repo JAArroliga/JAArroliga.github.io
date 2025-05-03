@@ -36,7 +36,7 @@ const maleMacroCalc = () => {
     const lifestyle = Number(lifestyleInput.value);
 
     return Math.round((10 * weight + 6.25 * height - 5 * age + 5) * lifestyle);
-}
+};
 
 const femaleMacroCalc = () => {
     const weight = Number(weightInput.value) * 0.453592;
@@ -45,11 +45,11 @@ const femaleMacroCalc = () => {
     const lifestyle = Number(lifestyleInput.value);
 
     return Math.round((10 * weight + 6.25 * height - 5 * age - 161) * lifestyle);
-}
+};
 
 calculateBtn.addEventListener("click", (event) => {
     event.preventDefault();
-    resultDiv.innerHTML = ""
+    resultDiv.innerHTML = "";
     let macros;
     
     if (femaleBtn.checked) {
