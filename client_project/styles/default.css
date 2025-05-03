@@ -4,6 +4,10 @@
     --celadon: #86deb7;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: var(--blue);
     margin: 2rem;
