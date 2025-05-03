@@ -7,6 +7,7 @@
 body {
     background-color: var(--blue);
     margin: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 main {
