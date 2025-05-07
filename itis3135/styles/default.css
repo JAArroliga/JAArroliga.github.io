@@ -72,6 +72,12 @@ table {
     margin: 0% 15% 0% 15%;
 }
 
+.complex-table tr:first-child {
+    background-color: #3a3422;
+    color: #E7AD73;
+    font-weight: bold;
+}
+
 #submit-button, #reset-button {
     background-color: #820263;
     color: #d17a22;
