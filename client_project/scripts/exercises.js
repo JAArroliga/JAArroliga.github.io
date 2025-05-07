@@ -27,8 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 Press the feet into the ground and the hips into the bench while lifting the bar off the rack. 
                 Slowly lower the bar to the chest by allowing the elbows to bend out to the side. 
                 Stop when the elbows are just below the bench, and press feet into the floor to press the weight straight up to return to the starting position.
-            </div>`,
-        3: `test`
+            </div>`
     };
     
     const mainContent= document.getElementById("main-content");
